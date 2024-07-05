@@ -6,15 +6,11 @@
 
     <div id="event-create-container" class="col-md-6  offset-md-3">
         <h1>Crie o seu evento</h1>
-        
+
         <form action="/events" method="POST" enctype="multipart/form-data">
 
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-            <div class="form-group">
-                <label for="image">Imagem do Evento:</label>
-                <input type="file" id="image" name="image" class="form-control-file">
-            </div>
             <div class="form-group">
                 <label for="title">Evento:</label>
                 <input type="text" class="form-control" id="title" name="title" placeholder="Nome do Evento">
@@ -36,8 +32,13 @@
                     <option value="0">Não</option>
                     <option value="1">Sim</option>
                 </select>
-                <br>
             </div>
+            <br>
+            <div class="form-group">
+                <label for="image">Imagem do Evento:</label>
+                <input type="file" id="image" name="image" class="form-control-file">
+            </div>
+            <br>
             <input type="submit" class="btn btn-primary" value="Criar Evento">
         </form>
     </div>
