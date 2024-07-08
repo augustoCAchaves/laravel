@@ -37,7 +37,7 @@ header {
     background-color: #d4edda;
     color: 1557241;
     border: 1px solid #c3e6cb;
-    width: 100%;  
+    width: 100%;
     margin-bottom: 0;
     text-align: center;
     padding: 10xp;
@@ -109,7 +109,7 @@ header {
     max-width: 25%;
     border-radius: 10px;
     padding: 0;
-    margin: .5%;
+    margin: 0.5%;
 }
 
 #events-container img {
@@ -149,6 +149,41 @@ header {
 #event-create-container select,
 #event-create-container textarea {
     font-size: 12px;
+}
+
+/* Event show page */
+
+#image-container,
+#info-container {
+    margin-top: 30px;
+}
+
+#image-container img {
+    border-radius: 10px;
+    height: 550px;
+}
+
+#info-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#info-container p {
+    margin: 1;
+    font-size: 14px;
+    display: flex;
+}
+
+#description-container h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#info-container ion-icon {
+    font-size: 20px;
+    color: #f2a340;
+    margin-right: 5px;
 }
 
 /* footer */

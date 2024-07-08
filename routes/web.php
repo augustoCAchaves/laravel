@@ -17,9 +17,13 @@ use App\Http\Controllers\EventController;
 
 Route::get('/', [EventController::class, 'index']);
 
+// Rota para exibir o formulário de criação de um evento
 Route::get('/events/create', [EventController::class, 'create']);
 
-// Salvando dados no banco
+// Rota para exibir um evento específico
+Route::get('/events/{id}', [EventController::class, 'show']);
+
+// Rota para salvar um evento
 Route::post('/events', [EventController::class, 'store']);
 
 Route::get('/contact', [EventController::class, 'contact']);
