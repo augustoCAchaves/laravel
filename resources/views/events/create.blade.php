@@ -39,6 +39,30 @@
                 <input type="file" id="image" name="image" class="form-control-file">
             </div>
             <br>
+            <div class="form-group space">
+                <label for="items">Adicione itens de infraestrutura:</label>
+                <div class="form-group">
+                    <input type="checkbox" id="chairs" name="items[]" value="Cadeiras">
+                    <label for="chairs"><span></span>Cadeiras</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="stage" name="items[]" value="Palco">
+                    <label for="stage"><span></span>Palco</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="drink" name="items[]" value="Open Bar">
+                    <label for="drink"><span></span>Open Bar</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="food" name="items[]" value="Open Food">
+                    <label for="food"><span></span>Open Food</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="gift" name="items[]" value="Brindes">
+                    <label for="gift"><span></span>Brindes</label>
+                </div>
+            </div>
+            <br>
             <input type="submit" class="btn btn-primary" value="Criar Evento">
         </form>
     </div>
