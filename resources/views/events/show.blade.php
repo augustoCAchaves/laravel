@@ -15,6 +15,8 @@
                 <p class="event-city"><ion-icon name="location-outline"></ion-icon> {{ $event->city }}</p>
                 <p class="event-participants"><ion-icon name="people-outline"></ion-icon> X Participantes</p>
                 <p class="event-owner"><ion-icon name="star-outline"></ion-icon> Dono do evento</p>
+                <p class="event-date"><ion-icon name="calendar-outline"></ion-icon>
+                    {{ date('d/m/Y', strtotime($event->date)) }}</p>
                 <br>
                 <a href="#" class="btn btn-primary" id="event-submit">Confirmar presença</a>
                 <h3>O evento conta com:</h3>

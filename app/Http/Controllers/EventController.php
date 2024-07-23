@@ -30,6 +30,7 @@ class EventController extends Controller
         $event = new Event();
 
         $event->title = $request->title;
+        $event->date = $request->date;
         $event->city = $request->city;
         $event->description = $request->description;
         $event->private = $request->private;
@@ -42,7 +43,7 @@ class EventController extends Controller
 
             $extension = $requestImage->extension();
 
-            // Criando String única para o nome baseada no tempo de upload
+            // Criando String ï¿½nica para o nome baseada no tempo de upload
             $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
 
             $requestImage->move(public_path('img/events'), $imageName);
