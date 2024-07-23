@@ -156,12 +156,12 @@ input[type="checkbox"] {
     display: none;
 }
 
-/* Estilo do span dentro do label que parece um botão */
+/* Estilo do span dentro do label que parece um botï¿½o */
 input[type="checkbox"] + label span {
     display: inline-block;
-    width: 20px; /* Largura do botão */
-    height: 20px; /* Altura do botão */
-    margin-right: 10px; /* Espaço entre o botão e o texto */
+    width: 20px; /* Largura do botï¿½o */
+    height: 20px; /* Altura do botï¿½o */
+    margin-right: 10px; /* Espaï¿½o entre o botï¿½o e o texto */
     vertical-align: middle;
     background-color: #f0f0f0;
     border: 2px solid #dcdcdc;
@@ -169,7 +169,7 @@ input[type="checkbox"] + label span {
     cursor: pointer;
 }
 
-/* Muda a cor de fundo do span quando o checkbox está marcado */
+/* Muda a cor de fundo do span quando o checkbox estï¿½ marcado */
 input[type="checkbox"]:checked + label span {
     background-color: #f2a340;
 }
@@ -191,7 +191,7 @@ input[type="checkbox"]:checked + label span {
 
 #image-container img {
     border-radius: 10px;
-    height: 550px;
+    height: 500px;
 }
 
 #info-container h1 {
